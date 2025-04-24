@@ -1,0 +1,11 @@
+C:\Users\developpeur_10\StockManagement\StockManagement.Domain\bin\Debug\net8.0\StockManagement.Domain.deps.json
+C:\Users\developpeur_10\StockManagement\StockManagement.Domain\bin\Debug\net8.0\StockManagement.Domain.dll
+C:\Users\developpeur_10\StockManagement\StockManagement.Domain\bin\Debug\net8.0\StockManagement.Domain.pdb
+C:\Users\developpeur_10\StockManagement\StockManagement.Domain\obj\Debug\net8.0\StockManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\developpeur_10\StockManagement\StockManagement.Domain\obj\Debug\net8.0\StockManagement.Domain.AssemblyInfoInputs.cache
+C:\Users\developpeur_10\StockManagement\StockManagement.Domain\obj\Debug\net8.0\StockManagement.Domain.AssemblyInfo.cs
+C:\Users\developpeur_10\StockManagement\StockManagement.Domain\obj\Debug\net8.0\StockManagement.Domain.csproj.CoreCompileInputs.cache
+C:\Users\developpeur_10\StockManagement\StockManagement.Domain\obj\Debug\net8.0\StockManagement.Domain.dll
+C:\Users\developpeur_10\StockManagement\StockManagement.Domain\obj\Debug\net8.0\refint\StockManagement.Domain.dll
+C:\Users\developpeur_10\StockManagement\StockManagement.Domain\obj\Debug\net8.0\StockManagement.Domain.pdb
+C:\Users\developpeur_10\StockManagement\StockManagement.Domain\obj\Debug\net8.0\ref\StockManagement.Domain.dll

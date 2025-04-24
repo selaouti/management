@@ -1,0 +1,17 @@
+C:\Users\developpeur_10\StockManagement\StockManagement.Infrastructure\bin\Debug\net8.0\StockManagement.Infrastructure.deps.json
+C:\Users\developpeur_10\StockManagement\StockManagement.Infrastructure\bin\Debug\net8.0\StockManagement.Infrastructure.runtimeconfig.json
+C:\Users\developpeur_10\StockManagement\StockManagement.Infrastructure\bin\Debug\net8.0\StockManagement.Infrastructure.dll
+C:\Users\developpeur_10\StockManagement\StockManagement.Infrastructure\bin\Debug\net8.0\StockManagement.Infrastructure.pdb
+C:\Users\developpeur_10\StockManagement\StockManagement.Infrastructure\bin\Debug\net8.0\StockManagement.Domain.dll
+C:\Users\developpeur_10\StockManagement\StockManagement.Infrastructure\bin\Debug\net8.0\StockManagement.Domain.pdb
+C:\Users\developpeur_10\StockManagement\StockManagement.Infrastructure\obj\Debug\net8.0\StockManagement.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\developpeur_10\StockManagement\StockManagement.Infrastructure\obj\Debug\net8.0\StockManagement.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\developpeur_10\StockManagement\StockManagement.Infrastructure\obj\Debug\net8.0\StockManagement.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\developpeur_10\StockManagement\StockManagement.Infrastructure\obj\Debug\net8.0\StockManagement.Infrastructure.AssemblyInfo.cs
+C:\Users\developpeur_10\StockManagement\StockManagement.Infrastructure\obj\Debug\net8.0\StockManagement.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\developpeur_10\StockManagement\StockManagement.Infrastructure\obj\Debug\net8.0\StockMan.D7A1E52F.Up2Date
+C:\Users\developpeur_10\StockManagement\StockManagement.Infrastructure\obj\Debug\net8.0\StockManagement.Infrastructure.dll
+C:\Users\developpeur_10\StockManagement\StockManagement.Infrastructure\obj\Debug\net8.0\refint\StockManagement.Infrastructure.dll
+C:\Users\developpeur_10\StockManagement\StockManagement.Infrastructure\obj\Debug\net8.0\StockManagement.Infrastructure.pdb
+C:\Users\developpeur_10\StockManagement\StockManagement.Infrastructure\obj\Debug\net8.0\StockManagement.Infrastructure.genruntimeconfig.cache
+C:\Users\developpeur_10\StockManagement\StockManagement.Infrastructure\obj\Debug\net8.0\ref\StockManagement.Infrastructure.dll

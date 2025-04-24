@@ -1,0 +1,5 @@
+C:\Users\developpeur_10\StockManagement\StockManagement.Application\obj\Debug\net8.0\StockManagement.Application.csproj.AssemblyReference.cache
+C:\Users\developpeur_10\StockManagement\StockManagement.Application\obj\Debug\net8.0\StockManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\developpeur_10\StockManagement\StockManagement.Application\obj\Debug\net8.0\StockManagement.Application.AssemblyInfoInputs.cache
+C:\Users\developpeur_10\StockManagement\StockManagement.Application\obj\Debug\net8.0\StockManagement.Application.AssemblyInfo.cs
+C:\Users\developpeur_10\StockManagement\StockManagement.Application\obj\Debug\net8.0\StockManagement.Application.csproj.CoreCompileInputs.cache
