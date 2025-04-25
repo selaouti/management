@@ -12,8 +12,8 @@ using StockManagement.Infrastructure.Persistence;
 namespace StockManagement.Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250424131305_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20250425131357_AddLotStockRelation")]
+    partial class AddLotStockRelation
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -93,6 +93,35 @@ namespace StockManagement.Infrastructure.Migrations
                     b.HasIndex("FournisseurId");
 
                     b.ToTable("Articles", (string)null);
+                });
+
+            modelBuilder.Entity("StockManagement.Domain.Entities.ArticleFournisseur", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ArticleId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("DateLivraison")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("FournisseurId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("Prix")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ArticleId");
+
+                    b.HasIndex("FournisseurId");
+
+                    b.ToTable("ArticleFournisseurs", (string)null);
                 });
 
             modelBuilder.Entity("StockManagement.Domain.Entities.Capteur", b =>
@@ -214,6 +243,9 @@ namespace StockManagement.Infrastructure.Migrations
                     b.Property<int>("ArticleId")
                         .HasColumnType("int");
 
+                    b.Property<DateTime>("DateExpiration")
+                        .HasColumnType("datetime2");
+
                     b.Property<int>("FournisseurId")
                         .HasColumnType("int");
 
@@ -241,6 +273,12 @@ namespace StockManagement.Infrastructure.Migrations
                     b.Property<DateTime>("DateMouvement")
                         .HasColumnType("datetime2");
 
+                    b.Property<int?>("EntrepotDestinationId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("EntrepotSourceId")
+                        .HasColumnType("int");
+
                     b.Property<int>("LotId")
                         .HasColumnType("int");
 
@@ -252,6 +290,10 @@ namespace StockManagement.Infrastructure.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("IdMouvement");
+
+                    b.HasIndex("EntrepotDestinationId");
+
+                    b.HasIndex("EntrepotSourceId");
 
                     b.HasIndex("LotId");
 
@@ -269,12 +311,17 @@ namespace StockManagement.Infrastructure.Migrations
                     b.Property<int>("EntrepotId")
                         .HasColumnType("int");
 
+                    b.Property<int>("LotId")
+                        .HasColumnType("int");
+
                     b.Property<int>("Quantite")
                         .HasColumnType("int");
 
                     b.HasKey("IdStock");
 
                     b.HasIndex("EntrepotId");
+
+                    b.HasIndex("LotId");
 
                     b.ToTable("Stocks", (string)null);
                 });
@@ -334,10 +381,29 @@ namespace StockManagement.Infrastructure.Migrations
                     b.Navigation("Fournisseur");
                 });
 
+            modelBuilder.Entity("StockManagement.Domain.Entities.ArticleFournisseur", b =>
+                {
+                    b.HasOne("StockManagement.Domain.Entities.Article", "Article")
+                        .WithMany("ArticleFournisseurs")
+                        .HasForeignKey("ArticleId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("StockManagement.Domain.Entities.Fournisseur", "Fournisseur")
+                        .WithMany("ArticleFournisseurs")
+                        .HasForeignKey("FournisseurId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Article");
+
+                    b.Navigation("Fournisseur");
+                });
+
             modelBuilder.Entity("StockManagement.Domain.Entities.Capteur", b =>
                 {
                     b.HasOne("StockManagement.Domain.Entities.Entrepot", "Entrepot")
-                        .WithMany("Capteurs")
+                        .WithMany()
                         .HasForeignKey("EntrepotId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -377,11 +443,25 @@ namespace StockManagement.Infrastructure.Migrations
 
             modelBuilder.Entity("StockManagement.Domain.Entities.MouvementStock", b =>
                 {
+                    b.HasOne("StockManagement.Domain.Entities.Entrepot", "EntrepotDestination")
+                        .WithMany("MouvementsDestination")
+                        .HasForeignKey("EntrepotDestinationId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.HasOne("StockManagement.Domain.Entities.Entrepot", "EntrepotSource")
+                        .WithMany("MouvementsSource")
+                        .HasForeignKey("EntrepotSourceId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
                     b.HasOne("StockManagement.Domain.Entities.Lot", "Lot")
-                        .WithMany()
+                        .WithMany("MouvementsStock")
                         .HasForeignKey("LotId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("EntrepotDestination");
+
+                    b.Navigation("EntrepotSource");
 
                     b.Navigation("Lot");
                 });
@@ -394,11 +474,21 @@ namespace StockManagement.Infrastructure.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("StockManagement.Domain.Entities.Lot", "Lot")
+                        .WithMany("Stocks")
+                        .HasForeignKey("LotId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Entrepot");
+
+                    b.Navigation("Lot");
                 });
 
             modelBuilder.Entity("StockManagement.Domain.Entities.Article", b =>
                 {
+                    b.Navigation("ArticleFournisseurs");
+
                     b.Navigation("Lots");
                 });
 
@@ -409,16 +499,27 @@ namespace StockManagement.Infrastructure.Migrations
 
             modelBuilder.Entity("StockManagement.Domain.Entities.Entrepot", b =>
                 {
-                    b.Navigation("Capteurs");
+                    b.Navigation("MouvementsDestination");
+
+                    b.Navigation("MouvementsSource");
 
                     b.Navigation("Stocks");
                 });
 
             modelBuilder.Entity("StockManagement.Domain.Entities.Fournisseur", b =>
                 {
+                    b.Navigation("ArticleFournisseurs");
+
                     b.Navigation("Articles");
 
                     b.Navigation("Lots");
+                });
+
+            modelBuilder.Entity("StockManagement.Domain.Entities.Lot", b =>
+                {
+                    b.Navigation("MouvementsStock");
+
+                    b.Navigation("Stocks");
                 });
 
             modelBuilder.Entity("StockManagement.Domain.Entities.Stock", b =>

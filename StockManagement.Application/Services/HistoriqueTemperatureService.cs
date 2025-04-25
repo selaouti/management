@@ -112,7 +112,7 @@ namespace StockManagement.Application.Services
         {
             return await _context.HistoriqueTemperatures
                 .Include(ht => ht.Capteur)
-                .Where(ht => ht.DateEnregistrement >= startDate && ht.DateEnregistrement <= endDate)
+                .Where(ht => ht.DateMesure >= startDate && ht.DateMesure <= endDate) // Utilise DateMesure
                 .ToListAsync();
         }
     }

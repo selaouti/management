@@ -92,7 +92,7 @@ namespace StockManagement.Application.Services
         {
             return await _context.Articles
                 .Include(a => a.Fournisseur)
-                .Where(a => EF.Functions.Like(a.Nom, $"%{name}%"))
+                .Where(a => EF.Functions.Like(a.CodeArticle, $"%{name}%"))
                 .ToListAsync();
         }
     }

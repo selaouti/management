@@ -5,6 +5,7 @@ C:\Users\developpeur_10\StockManagement\StockManagement.Domain\obj\Debug\net8.0\
 C:\Users\developpeur_10\StockManagement\StockManagement.Domain\obj\Debug\net8.0\StockManagement.Domain.AssemblyInfoInputs.cache
 C:\Users\developpeur_10\StockManagement\StockManagement.Domain\obj\Debug\net8.0\StockManagement.Domain.AssemblyInfo.cs
 C:\Users\developpeur_10\StockManagement\StockManagement.Domain\obj\Debug\net8.0\StockManagement.Domain.csproj.CoreCompileInputs.cache
+C:\Users\developpeur_10\StockManagement\StockManagement.Domain\obj\Debug\net8.0\StockManagement.Domain.sourcelink.json
 C:\Users\developpeur_10\StockManagement\StockManagement.Domain\obj\Debug\net8.0\StockManagement.Domain.dll
 C:\Users\developpeur_10\StockManagement\StockManagement.Domain\obj\Debug\net8.0\refint\StockManagement.Domain.dll
 C:\Users\developpeur_10\StockManagement\StockManagement.Domain\obj\Debug\net8.0\StockManagement.Domain.pdb

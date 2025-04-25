@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StockManagement.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5ac2f133554e116a08f390700a4d7839e4ea440e")]
 [assembly: System.Reflection.AssemblyProductAttribute("StockManagement.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StockManagement.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

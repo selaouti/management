@@ -9,6 +9,7 @@ C:\Users\developpeur_10\StockManagement\StockManagement.Infrastructure\obj\Debug
 C:\Users\developpeur_10\StockManagement\StockManagement.Infrastructure\obj\Debug\net8.0\StockManagement.Infrastructure.AssemblyInfoInputs.cache
 C:\Users\developpeur_10\StockManagement\StockManagement.Infrastructure\obj\Debug\net8.0\StockManagement.Infrastructure.AssemblyInfo.cs
 C:\Users\developpeur_10\StockManagement\StockManagement.Infrastructure\obj\Debug\net8.0\StockManagement.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\developpeur_10\StockManagement\StockManagement.Infrastructure\obj\Debug\net8.0\StockManagement.Infrastructure.sourcelink.json
 C:\Users\developpeur_10\StockManagement\StockManagement.Infrastructure\obj\Debug\net8.0\StockMan.D7A1E52F.Up2Date
 C:\Users\developpeur_10\StockManagement\StockManagement.Infrastructure\obj\Debug\net8.0\StockManagement.Infrastructure.dll
 C:\Users\developpeur_10\StockManagement\StockManagement.Infrastructure\obj\Debug\net8.0\refint\StockManagement.Infrastructure.dll

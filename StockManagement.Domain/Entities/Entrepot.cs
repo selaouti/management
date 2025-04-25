@@ -4,21 +4,17 @@ namespace StockManagement.Domain.Entities;
 
 public class Entrepot
 {
-    [Key]
-    public int IdEntrepot { get; set; } // Clé primaire pour Entrepôt
+        [Key]
+        public int IdEntrepot { get; set; } // Clé primaire
+        public required string Nom { get; set; }
+        public required string Adresse { get; set; }
+        public required string Localisation { get; set; }
+        // Relation avec Stock (Un entrepôt peut contenir plusieurs stocks)
+        public ICollection<Stock> Stocks { get; set; } = new List<Stock>();
 
-    [Required]
-    public required string Nom { get; set; } // Nom de l'entrepôt
+        // Mouvements provenant de cet entrepôt
+        public ICollection<MouvementStock> MouvementsSource { get; set; } = new List<MouvementStock>();
 
-    [Required]
-    public required string Adresse { get; set; } // Adresse de l'entrepôt
-
-    [Required]
-    public required string Localisation { get; set; } // Localisation (propriété manquante ajoutée)
-
-    // Relation avec Stock
-    public ICollection<Stock> Stocks { get; set; } = new List<Stock>();
-
-    // Relation avec Capteur
-    public ICollection<Capteur> Capteurs { get; set; } = new List<Capteur>();
+        // Mouvements arrivant dans cet entrepôt
+        public ICollection<MouvementStock> MouvementsDestination { get; set; } = new List<MouvementStock>();
 }

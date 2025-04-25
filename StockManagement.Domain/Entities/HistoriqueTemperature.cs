@@ -7,7 +7,7 @@ public class HistoriqueTemperature
     [Key]
     public int IdHistorique { get; set; }
 
-    public DateTime DateMesure { get; set; }
+    public DateTime DateMesure { get; set; } // Date d'enregistrement dans le système
     public float Valeur { get; set; }
 
     // Relation avec Capteur

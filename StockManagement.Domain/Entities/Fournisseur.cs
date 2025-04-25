@@ -22,4 +22,6 @@ public class Fournisseur
     // Relation avec Article
     public ICollection<Article> Articles { get; set; } = new List<Article>();
     public ICollection<Lot> Lots { get; set; }= new List<Lot>();
+    // Relation inverse avec ArticleFournisseur
+    public required ICollection<ArticleFournisseur> ArticleFournisseurs { get; set; }
 }

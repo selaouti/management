@@ -3,3 +3,16 @@ C:\Users\developpeur_10\StockManagement\StockManagement.Application\obj\Debug\ne
 C:\Users\developpeur_10\StockManagement\StockManagement.Application\obj\Debug\net8.0\StockManagement.Application.AssemblyInfoInputs.cache
 C:\Users\developpeur_10\StockManagement\StockManagement.Application\obj\Debug\net8.0\StockManagement.Application.AssemblyInfo.cs
 C:\Users\developpeur_10\StockManagement\StockManagement.Application\obj\Debug\net8.0\StockManagement.Application.csproj.CoreCompileInputs.cache
+C:\Users\developpeur_10\StockManagement\StockManagement.Application\obj\Debug\net8.0\StockManagement.Application.sourcelink.json
+C:\Users\developpeur_10\StockManagement\StockManagement.Application\bin\Debug\net8.0\StockManagement.Application.deps.json
+C:\Users\developpeur_10\StockManagement\StockManagement.Application\bin\Debug\net8.0\StockManagement.Application.dll
+C:\Users\developpeur_10\StockManagement\StockManagement.Application\bin\Debug\net8.0\StockManagement.Application.pdb
+C:\Users\developpeur_10\StockManagement\StockManagement.Application\bin\Debug\net8.0\StockManagement.Domain.dll
+C:\Users\developpeur_10\StockManagement\StockManagement.Application\bin\Debug\net8.0\StockManagement.Infrastructure.dll
+C:\Users\developpeur_10\StockManagement\StockManagement.Application\bin\Debug\net8.0\StockManagement.Domain.pdb
+C:\Users\developpeur_10\StockManagement\StockManagement.Application\bin\Debug\net8.0\StockManagement.Infrastructure.pdb
+C:\Users\developpeur_10\StockManagement\StockManagement.Application\obj\Debug\net8.0\StockMan.1B35F3EF.Up2Date
+C:\Users\developpeur_10\StockManagement\StockManagement.Application\obj\Debug\net8.0\StockManagement.Application.dll
+C:\Users\developpeur_10\StockManagement\StockManagement.Application\obj\Debug\net8.0\refint\StockManagement.Application.dll
+C:\Users\developpeur_10\StockManagement\StockManagement.Application\obj\Debug\net8.0\StockManagement.Application.pdb
+C:\Users\developpeur_10\StockManagement\StockManagement.Application\obj\Debug\net8.0\ref\StockManagement.Application.dll

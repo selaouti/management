@@ -105,7 +105,7 @@ namespace StockManagement.Application.Services
 
             if (!string.IsNullOrEmpty(articleName))
             {
-                query = query.Where(af => EF.Functions.Like(af.Article.Nom, $"%{articleName}%"));
+                query = query.Where(af => EF.Functions.Like(af.Article.CodeArticle, $"%{articleName}%"));
             }
 
             if (!string.IsNullOrEmpty(fournisseurName))

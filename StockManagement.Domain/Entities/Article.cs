@@ -28,4 +28,5 @@ public class Article
 
     // Relation avec Lot
     public ICollection<Lot> Lots { get; set; } = new List<Lot>();
+    public ICollection<ArticleFournisseur> ArticleFournisseurs { get; set; } = new List<ArticleFournisseur>();
 }
